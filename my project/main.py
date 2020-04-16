@@ -67,7 +67,7 @@ def new_user():
     new_user_gui.mainloop()
 
 def user_pred(user_id,password,old_user_gui):
-    if user_id == password:
+    if user_id == password and 0 < user_id < 500:
         old_user_gui.destroy()
         old_user_gui = Tk()
         head = Label(old_user_gui, text="Course recommendation for you", font=("Helvetica", 50), bg='yellow')
